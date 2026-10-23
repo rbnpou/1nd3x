@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben Pouquette (rbnpou) - Ciberseguridad, Redes & Desarrollador</title>
+    
+    <!-- Metaetiquetas SEO -->
+    <meta name="description" content="Perfil profesional de Ruben Pouquette (rbnpou). Investigador en Ciberseguridad, Hardware Hacking, Desarrollador WebGL/3D, Agentes de IA y Redes Mesh.">
+    <meta name="keywords" content="Ruben Pouquette, rbnpou, Ciberseguridad, Hardware Hacking, Cromotubo, BlueOff, Meshtastic, Mesh Argentina, WebGL, AI Agents, Bug Bounty">
+    <meta name="author" content="Ruben Pouquette">
+    
+    <!-- Open Graph (redes sociales) -->
+    <meta property="og:title" content="Ruben Pouquette (rbnpou) - Trayectoria Profesional">
+    <meta property="og:description" content="Investigador en Ciberseguridad, Desarrollo 3D/WebGL y Sistemas de Automatización.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://rbnpou.github.io">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ruben Pouquette",
+      "alternateName": "rbnpou",
+      "jobTitle": "Investigador en Ciberseguridad & Desarrollador",
+      "sameAs": [
+        "https://github.com/rbnpou",
+        "https://youtube.com/@rbnpou",
+        "https://instagram.com/rbnpou"
+      ],
+      "knowsAbout": [
+        "Cybersecurity",
+        "Hardware Hacking",
+        "Mesh Networking",
+        "WebGL Game Development",
+        "Automation & AI Agents",
+        "Bug Bounty"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-green: #238636;
+            --accent-purple: #a371f7;
+            --accent-red: #f85149;
+            --accent-ig: #e1306c;
+            --accent-spotify: #1db954;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Header / Hero */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 20px rgba(88, 166, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .handle {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .bio-lead {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-green);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #2ea043;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            background-color: var(--card-bg);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-ig {
+            border: 1px solid var(--accent-ig);
+            color: #fff;
+            background: rgba(225, 48, 108, 0.15);
+        }
+
+        .btn-ig:hover {
+            background: var(--accent-ig);
+            color: #fff;
+        }
+
+        .btn-spotify {
+            border: 1px solid var(--accent-spotify);
+            color: #fff;
+            background: rgba(29, 185, 84, 0.15);
+        }
+
+        .btn-spotify:hover {
+            background: var(--accent-spotify);
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Secciones */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .badge-live {
+            font-size: 0.75rem;
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: normal;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .tag.highlight {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Grids */
+        .projects-grid, .news-grid, .press-grid, .podcasts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card, .news-card, .press-card, .podcast-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card:hover, .news-card:hover, .press-card:hover, .podcast-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        .podcast-card:hover {
+            border-color: var(--accent-spotify);
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .podcast-card .card-title {
+            color: #fff;
+        }
+
+        .card-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            align-items: center;
+        }
+
+        .news-source, .press-badge {
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .spotify-badge {
+            background: rgba(29, 185, 84, 0.15);
+            color: var(--accent-spotify);
+            border: 1px solid var(--accent-spotify);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .press-badge.media-yt {
+            background: rgba(248, 81, 73, 0.15);
+            color: var(--accent-red);
+            border-color: var(--accent-red);
+        }
+
+        .loading-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: var(--text-muted);
+            padding: 30px;
+            font-size: 0.95rem;
+        }
+
+        /* Seccion Instagram */
+        .ig-card-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .ig-banner p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 2px solid var(--border-color);
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent);
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado / Perfil -->
+        <header>
+            <div class="avatar" id="github-avatar">RP</div>
+            <h1>Ruben Pouquette</h1>
+            <div class="handle">@rbnpou</div>
+            <p class="bio-lead">
+                Investigador en Ciberseguridad, Hardware Hacking, Desarrollo de Videojuegos 3D/WebGL y Sistemas de Automatización. Apasionado por las redes comunitarias descentralizadas y los agentes de IA.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/rbnpou" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                <a href="https://youtube.com/@rbnpou" target="_blank" rel="noopener" class="btn btn-outline">YouTube</a>
+                <a href="https://instagram.com/rbnpou" target="_blank" rel="noopener" class="btn btn-ig">Instagram (@rbnpou)</a>
+                <a href="mailto:tu-email@dominio.com" class="btn btn-primary">Contacto Directo</a>
+            </div>
+        </header>
+
+        <!-- Áreas de Especialización -->
+        <section>
+            <h2>⚡ Especialidades & Tecnologías</h2>
+            <div class="skills-grid">
+                <span class="tag highlight">Ciberseguridad & Bug Bounty</span>
+                <span class="tag highlight">Hardware Hacking (ESP8266 / NRF24L01)</span>
+                <span class="tag highlight">Redes Mesh (Meshtastic)</span>
+                <span class="tag highlight">Three.js / WebGL</span>
+                <span class="tag highlight">Agentes de IA & MCP</span>
+                <span class="tag">JavaScript / HTML5</span>
+                <span class="tag">SQLite / Automatización</span>
+                <span class="tag">Soporte TI & Arquitectura de Sistemas</span>
+            </div>
+        </section>
+
+        <!-- Radar de Noticias Dinámico (Opción B: RSS) -->
+        <section>
+            <h2>
+                <span>📡 Radar de Noticias Dinámico</span>
+                <span class="badge-live">● Sincronizado en Vivo</span>
+            </h2>
+            <div class="news-grid" id="rss-news-container">
+                <div class="loading-state">Obteniendo noticias e informes en tiempo real...</div>
+            </div>
+        </section>
+
+        <!-- Proyectos en GitHub (En Vivo) -->
+        <section>
+            <h2>
+                <span>🚀 Últimos Proyectos en GitHub</span>
+                <span class="badge-live">● En Vivo</span>
+            </h2>
+            <div class="projects-grid" id="github-projects">
+                <div class="loading-state">Obteniendo repositorios actualizados desde GitHub...</div>
+            </div>
+        </section>
+
+        <!-- Nueva Sección: Podcasts (Mesh Argentina & meshTALKS) -->
+        <section>
+            <h2>🎙️ Podcasts & Comunidad</h2>
+            <div class="podcasts-grid">
+                
+                <!-- Podcast 1: Mesh Argentina -->
+                <a href="https://mesharg.com.ar/podcast/" target="_blank" rel="noopener" class="podcast-card">
+                    <div>
+                        <div class="card-title">
+                            <span>Mesh Argentina | El podcast de la comunidad</span>
+                            <span>↗</span>
+                        </div>
+                        <p class="card-desc">El espacio oficial de la comunidad de redes mesh en Argentina. Episodios sobre ciberseguridad, tecnología LoRa, Meshtastic, Ekoparty y proyectos descentralizados.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="spotify-badge">🎧 Escuchar en Spotify</span>
+                        <span>Mesh Argentina</span>
+                    </div>
+                </a>
+
+                <!-- Podcast 2: meshTALKS -->
+                <a href="https://open.spotify.com/show/09dmwKJl4tim6afhNoYgha" target="_blank" rel="noopener" class="podcast-card">
+                    <div>
+                        <div class="card-title">
+                            <span>meshTALKS</span>
+                            <span>↗</span>
+                        </div>
+                        <p class="card-desc">Podcast documental que explora el crecimiento de las redes mesh y tecnologías open source en Latinoamérica a través de entrevistas con desarrolladores y comunidades.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="spotify-badge">🎧 Escuchar en Spotify</span>
+                        <span>Open Source / Mesh</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Sección Instagram (Widget Behold.so) -->
+        <section>
+            <h2>📸 Último Contenido en Instagram</h2>
+            <div class="ig-card-container">
+                <div class="ig-banner">
+                    <p>Proyectos de hardware, pruebas de redes Mesh, experimentos con IA y detrás de escena.</p>
+                </div>
+                
+                <!-- Widget Behold.so -->
+                <behold-widget feed-id="KM2HJQ2tuU1sxRKnxQNg"></behold-widget>
+                <script>
+                  (() => {
+                    if(window.__bhldScript)return;window.__bhldScript=true;
+                    const d=document,s=d.createElement("script");s.type="module";
+                    s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+                  })();
+                </script>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://instagram.com/rbnpou" target="_blank" rel="noopener" class="btn btn-ig">Seguir en Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apariciones en Prensa & Medios (Edición Manual) -->
+        <section>
+            <h2>📰 Apariciones en Prensa & Medios</h2>
+            <div class="press-grid">
+                
+                <!-- Entrada 1 de ejemplo -->
+                <a href="https://ejemplo-medio.com/noticia-o-entrevista" target="_blank" rel="noopener" class="press-card">
+                    <div>
+                        <div class="card-title">
+                            <span>Entrevista sobre Redes Mesh y Descentralización</span>
+                            <span>↗</span>
+                        </div>
+                        <p class="card-desc">Charla técnica y análisis sobre cómo las redes LoRa/Meshtastic permiten mantener comunicaciones activas sin necesidad de infraestructura de internet tradicional.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="press-badge">Portal Tech</span>
+                        <span>📅 15 de Octubre, 2026</span>
+                    </div>
+                </a>
+
+                <!-- Entrada 2 de ejemplo -->
+                <a href="https://ejemplo-podcast.com/episodio-ciberseguridad" target="_blank" rel="noopener" class="press-card">
+                    <div>
+                        <div class="card-title">
+                            <span>Podcast: Hardware Hacking y Agentes de IA en Ciberseguridad</span>
+                            <span>↗</span>
+                        </div>
+                        <p class="card-desc">Participación como invitado especial discutiendo proyectos de investigación inalámbrica (BlueOff) y la integración de MCP con SQLite para automatización.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="press-badge media-yt">YouTube / Podcast</span>
+                        <span>📅 2 de Septiembre, 2026</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Trayectoria Profesional -->
+        <section>
+            <h2>📌 Trayectoria & Enfoque</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">Investigación en Ciberseguridad & Automatización</div>
+                    <div class="timeline-desc">
+                        Enfoque en bug bounty, análisis de vulnerabilidades, integración de bases de datos como SQLite con MCP para la creación de agentes de IA y flujos de trabajo automatizados.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Hardware & Redes Descentralizadas</div>
+                    <div class="timeline-desc">
+                        Desarrollo e investigación con microcontroladores (ESP8266/ESP32), radiofrecuencia y despliegue de nodos para redes mesh comunitarias en Argentina.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Soporte TI & Desarrollo Técnico</div>
+                    <div class="timeline-desc">
+                        Experiencia en administración de sistemas, infraestructura TI y desarrollo de herramientas web a medida.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© <script>document.write(new Date().getFullYear())</script> Ruben Pouquette (rbnpou) — Sincronizado dinámicamente.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts de carga dinámica -->
+    <script>
+        const USERNAME = 'rbnpou';
+
+        // 1. Cargar Proyectos desde la API de GitHub
+        async function fetchGitHubData() {
+            try {
+                const userRes = await fetch(`https://api.github.com/users/${USERNAME}`);
+                if (userRes.ok) {
+                    const userData = await userRes.json();
+                    if (userData.avatar_url) {
+                        document.getElementById('github-avatar').innerHTML = `<img src="${userData.avatar_url}" alt="Ruben Pouquette">`;
+                    }
+                }
+
+                const reposRes = await fetch(`https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=6`);
+                const repos = await reposRes.json();
+
+                const container = document.getElementById('github-projects');
+                container.innerHTML = '';
+
+                if (!Array.isArray(repos) || repos.length === 0) {
+                    container.innerHTML = '<div class="loading-state">No se encontraron repositorios públicos.</div>';
+                    return;
+                }
+
+                repos.forEach(repo => {
+                    const card = document.createElement('a');
+                    card.className = 'project-card';
+                    card.href = repo.html_url;
+                    card.target = '_blank';
+                    card.rel = 'noopener noreferrer';
+
+                    const stars = repo.stargazers_count ? `⭐ ${repo.stargazers_count}` : '';
+                    const lang = repo.language ? `<span class="news-source" style="border-color:var(--accent-purple); color:var(--accent-purple);">${repo.language}</span>` : '';
+                    const description = repo.description || 'Sin descripción disponible aún.';
+
+                    card.innerHTML = `
+                        <div>
+                            <div class="card-title">
+                                <span>${repo.name}</span>
+                                <span>↗</span>
+                            </div>
+                            <p class="card-desc">${description}</p>
+                        </div>
+                        <div class="card-meta">
+                            ${lang}
+                            <span>${stars}</span>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error('Error al cargar datos de GitHub:', error);
+            }
+        }
+
+        // 2. Cargar Noticias RSS en Vivo
+        async function fetchRSSNews() {
+            const container = document.getElementById('rss-news-container');
+            const RSS_FEED_URL = 'https://thehackernews.com/feeds/posts/default';
+            const API_ENDPOINT = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_FEED_URL)}&count=4`;
+
+            try {
+                const res = await fetch(API_ENDPOINT);
+                const data = await res.json();
+
+                if (data.status === 'ok' && data.items && data.items.length > 0) {
+                    container.innerHTML = '';
+
+                    data.items.forEach(item => {
+                        const pubDate = new Date(item.pubDate).toLocaleDateString('es-ES', {
+                            day: 'numeric',
+                            month: 'short',
+                            year: 'numeric'
+                        });
+
+                        const cleanText = item.description
+                            ? item.description.replace(/<[^>]*>?/gm, '').trim().substring(0, 130) + '...'
+                            : 'Sin descripción detallada disponible.';
+
+                        const card = document.createElement('a');
+                        card.className = 'news-card';
+                        card.href = item.link;
+                        card.target = '_blank';
+                        card.rel = 'noopener noreferrer';
+
+                        card.innerHTML = `
+                            <div>
+                                <div class="card-title">
+                                    <span>${item.title}</span>
+                                    <span>↗</span>
+                                </div>
+                                <p class="card-desc">${cleanText}</p>
+                            </div>
+                            <div class="card-meta">
+                                <span class="news-source">Cybersecurity News</span>
+                                <span>📅 ${pubDate}</span>
+                            </div>
+                        `;
+                        container.appendChild(card);
+                    });
+                } else {
+                    container.innerHTML = '<div class="loading-state">No hay noticias disponibles en este momento.</div>';
+                }
+            } catch (err) {
+                console.error('Error obteniendo el RSS:', err);
+                container.innerHTML = '<div class="loading-state">Ocurrió un error al cargar las noticias dinámicas.</div>';
+            }
+        }
+
+        // Inicializar
+        fetchGitHubData();
+        fetchRSSNews();
+    </script>
+</body>
+</html>
