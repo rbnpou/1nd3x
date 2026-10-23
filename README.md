@@ -1,6 +1,6 @@
-#1ND3X.html
+# 1ND3X.html
 
-###QUÉ, PARA QUÉ, PORQUÉ
+### Qué, para qué, porqué
 
 Armé un archivo HTML para usar como landing page en cualquier sitio. Podés ver la demo en vivo entrando en https://rbnpou.github.io/1nd3x/
 Porque si.
